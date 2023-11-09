@@ -1,3 +1,5 @@
+import { SubmitButton } from "./Button";
+
 export const PersonalInfoForm = ({
   name,
   email,
@@ -35,6 +37,8 @@ export const PersonalInfoForm = ({
         value={phoneNum}
         onChange={(e) => onChangePhoneNum(e.target.value)}
       />
+      <br />
+      <SubmitButton></SubmitButton>
     </div>
   );
 };

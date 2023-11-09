@@ -2,6 +2,7 @@ import { useState } from "react";
 import { PersonalInfoForm } from "./components/PersonalInfoForm";
 import { EducationForm } from "./components/EducationForm";
 import { ExperienceForm } from "./components/ExperienceForm";
+import "./styles/App.css";
 
 function App() {
   const [name, setName] = useState("McKenzie");
@@ -54,34 +55,37 @@ function App() {
 
   return (
     <div id="cvContainer">
-      <PersonalInfoForm
-        name={name}
-        email={email}
-        phoneNum={phoneNum}
-        onChangeName={handleNameChange}
-        onChangeEmail={handleEmailChange}
-        onChangePhoneNum={handlePhoneNumChange}
-      />
-      <EducationForm
-        school={school}
-        major={major}
-        educationStartDate={educationStartDate}
-        educationEndDate={educationEndDate}
-        onChangeSchool={handleSchoolChange}
-        onChangeMajor={handleMajorChange}
-        onChangeEducationStartDate={handleEducationStartDateChange}
-        onChangeEducationEndDate={handleEducationEndDateChange}
-      />
-      <ExperienceForm
-        job={job}
-        positionTitle={positionTitle}
-        experienceStartDate={experienceStartDate}
-        experienceEndDate={experienceEndDate}
-        onChangeJob={handleJobChange}
-        onChangePositionTitle={handlePositionTitleChange}
-        onChangeExperienceStartDate={handleExperienceStartDateChange}
-        onChangeExperienceEndDate={handleExperienceEndDateChange}
-      />
+      <div id="inputContainer">
+        <PersonalInfoForm
+          name={name}
+          email={email}
+          phoneNum={phoneNum}
+          onChangeName={handleNameChange}
+          onChangeEmail={handleEmailChange}
+          onChangePhoneNum={handlePhoneNumChange}
+        />
+        <EducationForm
+          school={school}
+          major={major}
+          educationStartDate={educationStartDate}
+          educationEndDate={educationEndDate}
+          onChangeSchool={handleSchoolChange}
+          onChangeMajor={handleMajorChange}
+          onChangeEducationStartDate={handleEducationStartDateChange}
+          onChangeEducationEndDate={handleEducationEndDateChange}
+        />
+        <ExperienceForm
+          job={job}
+          positionTitle={positionTitle}
+          experienceStartDate={experienceStartDate}
+          experienceEndDate={experienceEndDate}
+          onChangeJob={handleJobChange}
+          onChangePositionTitle={handlePositionTitleChange}
+          onChangeExperienceStartDate={handleExperienceStartDateChange}
+          onChangeExperienceEndDate={handleExperienceEndDateChange}
+        />
+      </div>
+      <div id="resumeContainer"></div>
     </div>
   );
 }

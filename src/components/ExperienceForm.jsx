@@ -1,3 +1,5 @@
+import { SubmitButton } from "./Button";
+
 export const ExperienceForm = ({
   job,
   positionTitle,
@@ -46,6 +48,8 @@ export const ExperienceForm = ({
         value={endDate}
         onChange={(e) => onChangeEndDate(e.target.value)}
       />
+      <br />
+      <SubmitButton></SubmitButton>
     </div>
   );
 };

@@ -1,3 +1,5 @@
+import { SubmitButton } from "./Button";
+
 export const EducationForm = ({
   school,
   major,
@@ -46,6 +48,8 @@ export const EducationForm = ({
         value={endDate}
         onChange={(e) => onChangeEndDate(e.target.value)}
       />
+      <br />
+      <SubmitButton></SubmitButton>
     </div>
   );
 };

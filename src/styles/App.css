@@ -1,0 +1,64 @@
+* {
+  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#cvContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 30px;
+}
+#inputContainer {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 300px;
+  gap: 30px;
+  background-color: whitesmoke;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(225, 159, 167);
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid gray;
+}
+.inputSectionHeading {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+input {
+  background-color: whitesmoke;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+label {
+  padding: 5px;
+  font-weight: 600;
+  background-color: rgb(225, 159, 167);
+}
+.submitButton {
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 30px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  max-width: 125px;
+  align-self: center;
+}
+
+#resumeContainer {
+  background-color: whitesmoke;
+  max-height: 900px;
+  max-width: 800px;
+}
