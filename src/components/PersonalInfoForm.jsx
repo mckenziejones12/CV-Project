@@ -37,8 +37,6 @@ export const PersonalInfoForm = ({
         value={phoneNum}
         onChange={(e) => onChangePhoneNum(e.target.value)}
       />
-      <br />
-      <SubmitButton></SubmitButton>
     </div>
   );
 };

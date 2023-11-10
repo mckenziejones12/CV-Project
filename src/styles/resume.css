@@ -1,0 +1,64 @@
+#resumeContainer {
+  background-color: whitesmoke;
+  max-height: 900px;
+  max-width: 800px;
+  box-shadow: 4px 4px 4px darkgray;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+#resumeHeader {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(225, 159, 167);
+  align-self: center;
+  padding: 10px;
+}
+#resumeBody {
+  background-color: whitesmoke;
+  padding: 0px 30px 30px 30px;
+}
+h1 {
+  background-color: rgb(225, 159, 167);
+  text-align: center;
+}
+.contactInfo {
+  background-color: rgb(225, 159, 167);
+}
+#contactInfo {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: rgb(225, 159, 167);
+}
+.resumeSection {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding-bottom: 30px;
+}
+.resumeSectionHeader {
+  background-color: whitesmoke;
+  text-align: center;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid lightgray;
+  max-width: 400px;
+  padding-bottom: 5px;
+}
+.resumeSectionContent {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  background-color: whitesmoke;
+}
+.resumeSectionPrimary {
+  background-color: whitesmoke;
+}
+.resumeSectionSecondary {
+  background-color: whitesmoke;
+}
+.school-workName {
+  background-color: whitesmoke;
+}
+.major-positionName {
+  background-color: whitesmoke;
+}

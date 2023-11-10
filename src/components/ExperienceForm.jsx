@@ -33,7 +33,7 @@ export const ExperienceForm = ({
       <br />
       <label htmlFor={startDate}>Start Date: </label>
       <input
-        type="date"
+        type="text"
         id="startDate"
         name="startDate"
         value={startDate}
@@ -42,14 +42,12 @@ export const ExperienceForm = ({
       <br />
       <label htmlFor={endDate}>End Date: </label>
       <input
-        type="date"
+        type="text"
         id="endDate"
         name="endDate"
         value={endDate}
         onChange={(e) => onChangeEndDate(e.target.value)}
       />
-      <br />
-      <SubmitButton></SubmitButton>
     </div>
   );
 };

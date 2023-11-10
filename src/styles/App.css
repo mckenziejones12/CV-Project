@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin: 30px;
+  gap: 30px;
 }
 #inputContainer {
   display: flex;
@@ -43,22 +44,4 @@ label {
   padding: 5px;
   font-weight: 600;
   background-color: rgb(225, 159, 167);
-}
-.submitButton {
-  background-color: gray;
-  color: white;
-  border-radius: 5px;
-  padding: 10px 30px;
-  border: none;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  max-width: 125px;
-  align-self: center;
-}
-
-#resumeContainer {
-  background-color: whitesmoke;
-  max-height: 900px;
-  max-width: 800px;
 }
