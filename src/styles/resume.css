@@ -5,6 +5,8 @@
   box-shadow: 4px 4px 4px darkgray;
   display: grid;
   grid-template-rows: 1fr 4fr;
+  position: sticky;
+  top: 0;
 }
 #resumeHeader {
   display: flex;
