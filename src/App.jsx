@@ -4,6 +4,7 @@ import { EducationForm } from "./components/EducationForm";
 import { ExperienceForm } from "./components/ExperienceForm";
 import "./styles/App.css";
 import "./styles/resume.css";
+import "./styles/button.css";
 
 function App() {
   const [name, setName] = useState("McKenzie  Jones");
@@ -49,7 +50,7 @@ function App() {
   const handlePositionTitleChange = (newPositionTitle) => {
     setPositionTitle(newPositionTitle);
   };
-  const handleExperienceStartDateChange = (newEExperienceStartDate) => {
+  const handleExperienceStartDateChange = (newExperienceStartDate) => {
     setExperienceStartDate(newExperienceStartDate);
   };
   const handleExperienceEndDateChange = (newExperienceEndDate) => {

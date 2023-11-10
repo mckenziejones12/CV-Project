@@ -1,14 +1,14 @@
-import { SubmitButton } from "./Button";
+import { Buttons } from "./Button";
 
 export const ExperienceForm = ({
   job,
   positionTitle,
-  startDate,
-  endDate,
+  experienceStartDate,
+  experienceEndDate,
   onChangeJob,
   onChangePositionTitle,
-  onChangeStartDate,
-  onChangeEndDate,
+  onChangeExperienceStartDate,
+  onChangeExperienceEndDate,
 }) => {
   return (
     <div className="experience inputSection">
@@ -31,23 +31,25 @@ export const ExperienceForm = ({
         onChange={(e) => onChangePositionTitle(e.target.value)}
       />
       <br />
-      <label htmlFor={startDate}>Start Date: </label>
+      <label htmlFor={experienceStartDate}>Start Date: </label>
       <input
         type="text"
-        id="startDate"
-        name="startDate"
-        value={startDate}
-        onChange={(e) => onChangeStartDate(e.target.value)}
+        id="experienceStartDate"
+        name="experienceStartDate"
+        value={experienceStartDate}
+        onChange={(e) => onChangeExperienceStartDate(e.target.value)}
       />
       <br />
-      <label htmlFor={endDate}>End Date: </label>
+      <label htmlFor={experienceEndDate}>End Date: </label>
       <input
         type="text"
-        id="endDate"
-        name="endDate"
-        value={endDate}
-        onChange={(e) => onChangeEndDate(e.target.value)}
+        id="experienceEndDate"
+        name="experienceEndDate"
+        value={experienceEndDate}
+        onChange={(e) => onChangeExperienceEndDate(e.target.value)}
       />
+      <br />
+      <Buttons />
     </div>
   );
 };

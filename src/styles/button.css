@@ -1,0 +1,19 @@
+button {
+  background-color: whitesmoke;
+  color: rgb(225, 159, 167);
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+button:hover {
+  background-color: rgb(225, 159, 167);
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(225, 159, 167);
+}

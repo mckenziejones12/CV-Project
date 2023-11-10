@@ -1,14 +1,14 @@
-import { SubmitButton } from "./Button";
+import { Buttons } from "./Button";
 
 export const EducationForm = ({
   school,
   major,
-  startDate,
-  endDate,
+  educationStartDate,
+  educationEndDate,
   onChangeSchool,
   onChangeMajor,
-  onChangeStartDate,
-  onChangeEndDate,
+  onChangeEducationStartDate,
+  onChangeEducationEndDate,
 }) => {
   return (
     <div className="education inputSection">
@@ -31,23 +31,25 @@ export const EducationForm = ({
         onChange={(e) => onChangeMajor(e.target.value)}
       />
       <br />
-      <label htmlFor={startDate}>Start Date: </label>
+      <label htmlFor={educationStartDate}>Start Date: </label>
       <input
         type="text"
-        id="startDate"
-        name="startDate"
-        value={startDate}
-        onChange={(e) => onChangeStartDate(e.target.value)}
+        id="educationStartDate"
+        name="educationStartDate"
+        value={educationStartDate}
+        onChange={(e) => onChangeEducationStartDate(e.target.value)}
       />
       <br />
-      <label htmlFor={endDate}>End Date: </label>
+      <label htmlFor={educationEndDate}>End Date: </label>
       <input
         type="text"
-        id="endDate"
-        name="endDate"
-        value={endDate}
-        onChange={(e) => onChangeEndDate(e.target.value)}
+        id="educationEndDate"
+        name="educationEndDate"
+        value={educationEndDate}
+        onChange={(e) => onChangeEducationEndDate(e.target.value)}
       />
+      <br />
+      <Buttons></Buttons>
     </div>
   );
 };
