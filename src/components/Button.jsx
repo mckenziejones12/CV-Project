@@ -1,8 +1,7 @@
 export const Buttons = () => {
   return (
     <div id="buttons">
-      <button> + Add</button>
-      <button>Delete</button>
+      <button id="addButton">Edit</button>
     </div>
   );
 };

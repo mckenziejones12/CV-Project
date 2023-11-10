@@ -11,7 +11,7 @@ export const PersonalInfoForm = ({
   return (
     <div className="personalInfo inputSection">
       <h2 className="inputSectionHeading">Personal Information</h2>
-      <label htmlFor={name}>Full Name: </label>
+      <label htmlFor="name">Full Name: </label>
       <input
         type="text"
         id="name"
@@ -20,7 +20,7 @@ export const PersonalInfoForm = ({
         onChange={(e) => onChangeName(e.target.value)}
       />
       <br />
-      <label htmlFor={email}>Email: </label>
+      <label htmlFor="email">Email: </label>
       <input
         type="text"
         id="email"
@@ -29,7 +29,7 @@ export const PersonalInfoForm = ({
         onChange={(e) => onChangeEmail(e.target.value)}
       />
       <br />
-      <label htmlFor={phoneNum}>Phone Number: </label>
+      <label htmlFor="phoneNum">Phone Number: </label>
       <input
         type="tel"
         id="phoneNum"

@@ -1,5 +1,3 @@
-import { Buttons } from "./Button";
-
 export const ExperienceForm = ({
   job,
   positionTitle,
@@ -13,7 +11,7 @@ export const ExperienceForm = ({
   return (
     <div className="experience inputSection">
       <h2 className="inputSectionHeading">Experience</h2>
-      <label htmlFor={job}>Name of Workplace: </label>
+      <label htmlFor="job">Name of Workplace: </label>
       <input
         type="text"
         id="job"
@@ -22,7 +20,7 @@ export const ExperienceForm = ({
         onChange={(e) => onChangeJob(e.target.value)}
       />
       <br />
-      <label htmlFor={positionTitle}>Position Title: </label>
+      <label htmlFor="positionTitle">Position Title: </label>
       <input
         type="text"
         id="positionTitle"
@@ -31,7 +29,7 @@ export const ExperienceForm = ({
         onChange={(e) => onChangePositionTitle(e.target.value)}
       />
       <br />
-      <label htmlFor={experienceStartDate}>Start Date: </label>
+      <label htmlFor="experienceStartDate">Start Date: </label>
       <input
         type="text"
         id="experienceStartDate"
@@ -40,7 +38,7 @@ export const ExperienceForm = ({
         onChange={(e) => onChangeExperienceStartDate(e.target.value)}
       />
       <br />
-      <label htmlFor={experienceEndDate}>End Date: </label>
+      <label htmlFor="experienceEndDate">End Date: </label>
       <input
         type="text"
         id="experienceEndDate"
@@ -48,8 +46,6 @@ export const ExperienceForm = ({
         value={experienceEndDate}
         onChange={(e) => onChangeExperienceEndDate(e.target.value)}
       />
-      <br />
-      <Buttons />
     </div>
   );
 };

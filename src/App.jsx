@@ -98,8 +98,8 @@ function App() {
           </div>
         </div>
         <div id="resumeBody">
-          <div class="resumeSection">
-            <h2 class="resumeSectionHeader">Education</h2>
+          <div className="resumeSection">
+            <h2 className="resumeSectionHeader">Education</h2>
             <div className="resumeSectionContent">
               <p className="resumeSectionPrimary">
                 {educationStartDate} - {educationEndDate}
@@ -110,8 +110,8 @@ function App() {
               </div>
             </div>
           </div>
-          <div class="resumeSection">
-            <h2 class="resumeSectionHeader">Experience</h2>
+          <div className="resumeSection">
+            <h2 className="resumeSectionHeader">Experience</h2>
             <div className="resumeSectionContent">
               <p className="resumeSectionPrimary">
                 {experienceStartDate} - {experienceEndDate}
